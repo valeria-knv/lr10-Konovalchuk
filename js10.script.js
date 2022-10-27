@@ -66,7 +66,7 @@ function Work(){
                 if((document.getElementById('1').src == document.getElementById('2').src && document.getElementById('2').src == document.getElementById('3').src) || (document.getElementById('4').src == document.getElementById('5').src && document.getElementById('5').src == document.getElementById('6').src) || (document.getElementById('7').src == document.getElementById('8').src && document.getElementById('8').src == document.getElementById('9').src)){ 
                     alert("You win! Congratulations!");
                     document.querySelector('.container').style.cssText = "box-shadow: 0 0 30px green, 0 0 30px green";
-                    document.getElementById('lines').innerHTML = ++count + " / 3";
+                    document.getElementById('lines').innerHTML = count + " / 3";
                     document.getElementById('total').innerHTML = 1000;
                     document.getElementById('credit').innerHTML = 0;
                     count = 0;

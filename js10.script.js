@@ -70,22 +70,36 @@ function Work(){
                     document.getElementById('total').innerHTML = 1000;
                     document.getElementById('credit').innerHTML = 0;
                     count = 0;
-                    document.getElementById('btn').innerHTML = "Restart";
-                    document.getElementById('btn').onclick = function(){
+                    btn.innerHTML = "Restart";
+                    btn.onclick = function(){
                         window.location.href=".\\index.html";
                     }
                 }
             }
             else{
-                alert("You lose! Try next time!");
-                document.querySelector('.container').style.cssText = "box-shadow: 0 0 30px red, 0 0 30px red";
-                document.getElementById('lines').innerHTML = ++count + " / 3";
-                document.getElementById('total').innerHTML -= Number(100);
-                document.getElementById('credit').innerHTML = Number(document.getElementById('credit').innerHTML) + 100;
-                count = 0;
-                btn.innerHTML = "Restart";
-                btn.onclick = function(){
-                    window.location.href=".\\index.html";
+                if((document.getElementById('1').src == document.getElementById('2').src && document.getElementById('2').src == document.getElementById('3').src) || (document.getElementById('4').src == document.getElementById('5').src && document.getElementById('5').src == document.getElementById('6').src) || (document.getElementById('7').src == document.getElementById('8').src && document.getElementById('8').src == document.getElementById('9').src)){ 
+                    alert("You win! Congratulations!");
+                    document.querySelector('.container').style.cssText = "box-shadow: 0 0 30px green, 0 0 30px green";
+                    document.getElementById('lines').innerHTML = ++count + " / 3";
+                    document.getElementById('total').innerHTML = 1000;
+                    document.getElementById('credit').innerHTML = 0;
+                    count = 0;
+                    btn.innerHTML = "Restart";
+                    btn.onclick = function(){
+                        window.location.href=".\\index.html";
+                    }
+                }
+                else{
+                    alert("You lose! Try next time!");
+                    document.querySelector('.container').style.cssText = "box-shadow: 0 0 30px red, 0 0 30px red";
+                    document.getElementById('lines').innerHTML = ++count + " / 3";
+                    document.getElementById('total').innerHTML -= Number(100);
+                    document.getElementById('credit').innerHTML = Number(document.getElementById('credit').innerHTML) + 100;
+                    count = 0;
+                    btn.innerHTML = "Restart";
+                    btn.onclick = function(){
+                        window.location.href=".\\index.html";
+                    }
                 }
             }
         });

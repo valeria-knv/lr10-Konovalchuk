@@ -69,6 +69,7 @@ function Work(){
                     document.getElementById('lines').innerHTML = ++count + " / 3";
                     document.getElementById('total').innerHTML = 1000;
                     document.getElementById('credit').innerHTML = 0;
+                    count = 0;
                     document.getElementById('btn').innerHTML = "Restart";
                     document.getElementById('btn').onclick = function(){
                         window.location.href=".\\index.html";

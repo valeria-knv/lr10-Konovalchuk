@@ -1,10 +1,10 @@
 const imgs = [
-    ".\\imgs\\avocado.png",
-    ".\\imgs\\pomegranate.png",
-    ".\\imgs\\cherry.png",
-    ".\\imgs\\banana.png",
-    ".\\imgs\\kiwi.png",
-    ".\\imgs\\watermelon.png"
+    ".\\avocado.png",
+    ".\\pomegranate.png",
+    ".\\cherry.png",
+    ".\\banana.png",
+    ".\\kiwi.png",
+    ".\\watermelon.png"
 ];
 
 function GetRandom(min, max) {
@@ -71,7 +71,7 @@ function Work(){
                     document.getElementById('credit').innerHTML = 0;
                     document.getElementById('btn').innerHTML = "Restart";
                     document.getElementById('btn').onclick = function(){
-                        window.location.href=".\\lr10.html";
+                        window.location.href=".\\index.html";
                     }
                 }
             }
@@ -84,7 +84,7 @@ function Work(){
                 count = 0;
                 btn.innerHTML = "Restart";
                 btn.onclick = function(){
-                    window.location.href=".\\lr10.html";
+                    window.location.href=".\\index.html";
                 }
             }
         });

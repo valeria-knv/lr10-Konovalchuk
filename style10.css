@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;    
+    background-image: url("https://kartinkin.net/uploads/posts/2020-07/1595717603_16-p-fon-kazino-20.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.text{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin: 10% auto 0;
+    font-family: "Open Sans",  Impact;
+}
+.text2{
+    font-size: 40px;
+    background-color: white;
+    opacity: 0.7;
+    width: 300px;
+    color: rgb(30, 28, 28);
+    text-align: center;
+    margin: 5% auto 0;
+    font-family: "Open Sans",  Impact;
+}
+.area {
+  text-align: center;
+  font-size: 7em;
+  color: #fff;
+  font-family: "Open Sans",  Impact;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur 1s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+.imgg{
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.imgs{
+    width: 14vmin;
+    box-sizing: border-box;
+    margin: auto 1vmin 1vmin 1vmin;
+    height:14vmin;
+    border: 3px solid rgb(174, 174, 174);
+}
+h1 {
+    text-align: center;
+    font-size: 3vw;
+    color:rgb(252, 252, 252);
+    width: auto;
+}
+.money{
+    display: flex;
+    padding: 10px;
+}
+h2{
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex: 1 1 auto;
+    width: 40vmin;
+    margin: 0 8vmin 10px;
+    padding: 6px;
+    background-color: rgb(109, 126, 70);
+    border: thick double black;
+    border-width: 8px;
+    border-radius: 6px;
+    text-align: center;
+    color: rgb(230, 215, 215);
+    text-shadow: 2px 2px 2px rgb(255, 255, 0);
+    font-size: 4vmin;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.container{
+    display: block;
+    position:relative;
+    justify-content:center;
+    margin: 0 auto;
+    padding: 10vmin;
+    width: 50vmin;
+    height: 50vmin;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.855);
+    border-radius: 30px;
+}
+.button{
+    display: block;
+    color: #fff;
+    font-size: 4vmin;
+    padding: 1.5vmin 5vmin;
+    background-color: rgb(115, 15, 15);
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(255, 0, 0);
+    display: inline-block;
+    margin: 1vmin auto 0;
+}
+.button:hover{
+    opacity: 0.9;
+    transition: 1s;
+    background-color: rgb(75, 0, 0);
+    font-size: 3.3vmin;
+}

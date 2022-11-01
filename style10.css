@@ -78,6 +78,7 @@ h1 {
     font-size: 3vw;
     color:rgb(252, 252, 252);
     width: auto;
+    margin: 0 auto 1vmin;
 }
 .money{
     display: flex;
